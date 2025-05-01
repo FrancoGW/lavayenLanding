@@ -28,7 +28,7 @@ export default function HeroSectionAlt() {
   }
 
   return (
-    <section id="hero" className="min-h-screen relative flex items-center justify-center overflow-hidden pt-16">
+    <section id="hero" className="min-h-screen relative flex items-center justify-center overflow-hidden pt-16 pb-16">
       <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/60 to-black/80 z-10"></div>
 
       {/* Video de fondo */}
