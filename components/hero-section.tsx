@@ -97,7 +97,7 @@ export default function HeroSection() {
           >
             <div className="aspect-video max-w-3xl mx-auto rounded-lg overflow-hidden shadow-2xl border-4 border-white/10">
               <video controls className="w-full h-full">
-                <source src="https://sftdevelopment.com/recursos/video.mp4" type="video/mp4" />
+                <source src="/video.mp4" type="video/mp4" />
                 Tu navegador no soporta videos HTML5.
               </video>
             </div>
@@ -111,7 +111,7 @@ export default function HeroSection() {
             className="flex justify-center w-full px-4 mb-16"
           >
             <Button asChild size="lg" className="py-6 bg-primary hover:bg-primary/90 w-full">
-              <Link href="https://pay.hotmart.com/K98327460Y" className="flex items-center justify-center">
+              <Link href="#contacto" className="flex items-center justify-center">
                 <span className="text-center text-xs sm:text-base md:text-lg lg:text-xl">
                   👉 ¡Quiero Convertirme en un Entrenador de Élite!
                 </span>
