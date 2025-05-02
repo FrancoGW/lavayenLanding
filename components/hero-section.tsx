@@ -97,7 +97,7 @@ export default function HeroSection() {
           >
             <div className="aspect-video max-w-3xl mx-auto rounded-lg overflow-hidden shadow-2xl border-4 border-white/10">
               <video controls className="w-full h-full">
-                <source src="/video.mp4" type="video/mp4" />
+                <source src="/video2.mp4" type="video/mp4" />
                 Tu navegador no soporta videos HTML5.
               </video>
             </div>
