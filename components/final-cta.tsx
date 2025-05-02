@@ -45,7 +45,7 @@ export default function FinalCta() {
             className="w-full px-4"
           >
             <Button asChild size="lg" className="text-lg py-6 bg-primary hover:bg-primary/90 w-full">
-            <Link href="#contacto" className="flex items-center justify-center">
+            <Link href="https://pay.hotmart.com/K98327460Y" className="flex items-center justify-center">
                 <span className="text-center text-xs  md:text-2xl">👉 ¡Quiero Convertirme en un Entrenador de Élite!</span>
               </Link>
             </Button>

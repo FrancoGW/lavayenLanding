@@ -100,7 +100,7 @@ export default function Footer() {
                 <span className="text-gray-400">ezequilavayen@gmail.com</span>
               </div>
               <Button asChild className="mt-4">
-                <Link href="#contacto">👉 ¡Inscríbete Ahora!</Link>
+                <Link href="https://pay.hotmart.com/K98327460Y">👉 ¡Inscríbete Ahora!</Link>
               </Button>
             </div>
           </div>

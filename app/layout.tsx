@@ -5,6 +5,7 @@ import "./globals.css"
 import { ThemeProvider } from "@/components/theme-provider"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
+import FacebookPixel from "@/components/FacebookPixel"
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
 const montserrat = Montserrat({
@@ -35,6 +36,7 @@ export default function RootLayout({
             <Footer />
           </div>
         </ThemeProvider>
+        <FacebookPixel />
       </body>
     </html>
   )
