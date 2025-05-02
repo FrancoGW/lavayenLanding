@@ -87,7 +87,7 @@ export default function HeroSection() {
             </p>
           </motion.div>
 
-          {/* Video destacado en el centro */}
+          {/* Video destacado en el centro asdasdasd*/}
           <motion.div
             variants={{
               hidden: { opacity: 0, y: 20 },
