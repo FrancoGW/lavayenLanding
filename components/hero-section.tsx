@@ -41,9 +41,8 @@ export default function HeroSection() {
           loop
           playsInline
           className="w-full h-full object-cover"
-          poster="/placeholder.svg?height=1080&width=1920"
         >
-          <source src="/video-placeholder.mp4" type="video/mp4" />
+         <source src="/fondo.mp4" type="video/mp4" />
           Tu navegador no soporta videos HTML5.
         </video>
       </div>
