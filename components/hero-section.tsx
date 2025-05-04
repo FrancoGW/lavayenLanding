@@ -55,6 +55,26 @@ export default function HeroSection() {
             quality={100}
           />
         </div>
+        <div className="hidden md:block w-full h-full">
+          <Image
+            src="/img1.jpeg"
+            alt="Fondo desktop"
+            fill
+            className="object-cover"
+            priority
+            quality={100}
+          />
+        </div>
+        <div className="block md:hidden w-full h-full">
+          <Image
+            src="/img2.jpeg"
+            alt="Fondo mobile"
+            fill
+            className="object-cover"
+            priority
+            quality={100}
+          />
+        </div>
       </div>
 
       <div className="container mx-auto relative z-20 px-4">
@@ -96,7 +116,7 @@ export default function HeroSection() {
             </p>
           </motion.div>
 
-          {/* Video destacado en el centro asdasdasd*/}
+          {/* Video destacado en el centro */}
           <motion.div
             variants={{
               hidden: { opacity: 0, y: 20 },
@@ -106,6 +126,7 @@ export default function HeroSection() {
           >
             <div className="aspect-video max-w-3xl mx-auto rounded-lg overflow-hidden shadow-2xl border-4 border-white/10">
               <video controls className="w-full h-full">
+                <source src="/video.mp4" type="video/mp4" />
                 <source src="/video.mp4" type="video/mp4" />
                 Tu navegador no soporta videos HTML5.
               </video>
