@@ -45,3 +45,10 @@ next-env.d.ts
 .vscode/
 *.swp
 *.swo
+
+# Videos
+public/video.mp4
+*.mp4
+*.mov
+*.avi
+*.mkv
