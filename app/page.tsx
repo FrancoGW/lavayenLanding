@@ -8,7 +8,6 @@ import SobreMiSection from "@/components/sobre-mi-section"
 import CtaSection from "@/components/cta-section"
 import FaqSection from "@/components/faq-section"
 import FinalCta from "@/components/final-cta"
-import ContactForm from "@/components/contact-form"
 
 export default function Home() {
   return (
@@ -23,7 +22,6 @@ export default function Home() {
       <CtaSection />
       <FaqSection />
       <FinalCta />
-      <ContactForm />
     </>
   )
 }

@@ -97,10 +97,12 @@ export default function Footer() {
             <div className="space-y-2">
               <div className="flex items-center gap-2">
                 <Mail className="h-5 w-5 text-primary" />
-                <span className="text-gray-400">ezequilavayen@gmail.com</span>
+                <a href="mailto:ezequilavayen@gmail.com" className="text-gray-400 hover:text-primary transition-colors">
+                  ezequilavayen@gmail.com
+                </a>
               </div>
               <Button asChild className="mt-4">
-                <Link href="#contacto">👉 ¡Inscríbete Ahora!</Link>
+                <Link href="https://pay.hotmart.com/K98327460Y?bid=1746384363471">👉 ¡Inscríbete Ahora!</Link>
               </Button>
             </div>
           </div>

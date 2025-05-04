@@ -62,7 +62,7 @@ export default function Navbar() {
 
         <div className="hidden md:block">
           <Button asChild size="lg" className="font-medium">
-            <Link href="#contacto" className="flex items-center justify-center">
+            <Link href="https://pay.hotmart.com/K98327460Y?bid=1746384363471" className="flex items-center justify-center">
               <span>👉 ¡Inscríbete Ahora!</span>
             </Link>
           </Button>
@@ -92,7 +92,7 @@ export default function Navbar() {
               </Link>
             ))}
             <Button asChild size="lg" className="font-medium mt-2 w-full">
-              <Link href="#contacto" className="flex items-center justify-center">
+              <Link href="https://pay.hotmart.com/K98327460Y?bid=1746384363471" className="flex items-center justify-center">
                 <span>👉 ¡Inscríbete Ahora!</span>
               </Link>
             </Button>
