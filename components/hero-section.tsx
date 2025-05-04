@@ -6,6 +6,7 @@ import { ChevronDown } from "lucide-react"
 import { motion, useAnimation } from "framer-motion"
 import { useInView } from "react-intersection-observer"
 import Link from "next/link"
+import Image from "next/image"
 
 export default function HeroSection() {
   const controls = useAnimation()
@@ -32,20 +33,28 @@ export default function HeroSection() {
     <section id="hero" className="min-h-screen relative flex items-center justify-center overflow-hidden pt-16 pb-20">
       <div className="absolute inset-0 bg-gradient-to-b from-black/80 via-black/60 to-black/80 z-10"></div>
 
-      {/* Video de fondo */}
+      {/* Imágenes de fondo */}
       <div className="absolute inset-0 w-full h-full">
-        <video
-          ref={videoRef}
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="w-full h-full object-cover"
-          poster="/placeholder.svg?height=1080&width=1920"
-        >
-          <source src="/video-placeholder.mp4" type="video/mp4" />
-          Tu navegador no soporta videos HTML5.
-        </video>
+        <div className="hidden md:block w-full h-full">
+          <Image
+            src="/img1.jpeg"
+            alt="Fondo desktop"
+            fill
+            className="object-cover"
+            priority
+            quality={100}
+          />
+        </div>
+        <div className="block md:hidden w-full h-full">
+          <Image
+            src="/img2.jpeg"
+            alt="Fondo mobile"
+            fill
+            className="object-cover"
+            priority
+            quality={100}
+          />
+        </div>
       </div>
 
       <div className="container mx-auto relative z-20 px-4">
@@ -111,7 +120,7 @@ export default function HeroSection() {
             className="flex justify-center w-full px-4 mb-16"
           >
             <Button asChild size="lg" className="py-6 bg-primary hover:bg-primary/90 w-full">
-              <Link href="#contacto" className="flex items-center justify-center">
+              <Link href="https://pay.hotmart.com/K98327460Y?bid=1746384363471" className="flex items-center justify-center">
                 <span className="text-center text-xs sm:text-base md:text-lg lg:text-xl">
                   👉 ¡Quiero Convertirme en un Entrenador de Élite!
                 </span>
