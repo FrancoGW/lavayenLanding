@@ -8,6 +8,7 @@ import Footer from "@/components/footer"
 import FacebookPixel from "@/components/FacebookPixel"
 import GoogleAnalytics from "@/components/GoogleAnalytics"
 
+// Configuración de fuentes
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" })
 const montserrat = Montserrat({
   subsets: ["latin"],
@@ -15,6 +16,7 @@ const montserrat = Montserrat({
   weight: ["400", "500", "600", "700", "800"],
 })
 
+// Configuración de metadatos para SEO
 export const metadata: Metadata = {
   title: "Método Lavayen | Entrenamiento de Élite para Baloncesto",
   description:
@@ -22,6 +24,7 @@ export const metadata: Metadata = {
     generator: 'v0.dev'
 }
 
+// Layout principal con píxeles de tracking integrados para análisis de conversión
 export default function RootLayout({
   children,
 }: Readonly<{
