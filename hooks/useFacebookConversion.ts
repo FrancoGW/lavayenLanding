@@ -5,6 +5,12 @@ import { useEffect } from 'react'
 interface ConversionEventData {
   ip?: string
   userAgent?: string
+  email?: string
+  phone?: string
+  contentName?: string
+  contentCategory?: string
+  value?: number
+  currency?: string
   customData?: Record<string, any>
 }
 
@@ -16,14 +22,27 @@ export const useFacebookConversion = () => {
     }
   }, [])
 
-  const trackConversion = (eventName: string, eventData: ConversionEventData = {}) => {
+  const trackConversion = async (eventName: string, eventData: ConversionEventData = {}) => {
     if (typeof window !== 'undefined' && window.sendConversionEvent) {
-      window.sendConversionEvent(eventName, {
-        ip: eventData.ip,
-        userAgent: eventData.userAgent || navigator.userAgent,
-        customData: eventData.customData
-      })
+      try {
+        await window.sendConversionEvent(eventName, {
+          ip: eventData.ip,
+          userAgent: eventData.userAgent || navigator.userAgent,
+          email: eventData.email,
+          phone: eventData.phone,
+          contentName: eventData.contentName,
+          contentCategory: eventData.contentCategory,
+          value: eventData.value,
+          currency: eventData.currency,
+          customData: eventData.customData
+        })
+        return true
+      } catch (error) {
+        console.error('Error al rastrear conversión:', error)
+        return false
+      }
     }
+    return false
   }
 
   return { trackConversion }
@@ -32,6 +51,6 @@ export const useFacebookConversion = () => {
 // Extender la interfaz Window para incluir la función sendConversionEvent
 declare global {
   interface Window {
-    sendConversionEvent: (eventName: string, eventData: any) => void
+    sendConversionEvent: (eventName: string, eventData: any) => Promise<void>
   }
 } 
