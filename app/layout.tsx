@@ -21,7 +21,10 @@ export const metadata: Metadata = {
   title: "Método Lavayen | Entrenamiento de Élite para Baloncesto",
   description:
     "Conviértete en un entrenador de élite en solo 3 meses con el Método Lavayen. Programa de entrenamiento avanzado para entrenadores de baloncesto.",
-    generator: 'v0.dev'
+  generator: 'v0.dev',
+  other: {
+    'facebook-domain-verification': 'qe5x7yg5lxj2x9jmf52unqznpoj3zr'
+  }
 }
 
 // Layout principal con píxeles de tracking integrados para análisis de conversión
@@ -32,6 +35,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="es" suppressHydrationWarning>
+      <head>
+        <meta name="facebook-domain-verification" content="qe5x7yg5lxj2x9jmf52unqznpoj3zr" />
+      </head>
       <body className={`${inter.variable} ${montserrat.variable} font-sans`}>
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem disableTransitionOnChange>
           <div className="flex min-h-screen flex-col">
