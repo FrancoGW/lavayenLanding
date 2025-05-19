@@ -111,8 +111,7 @@ export default function HeroSection() {
             }}
           >
             <p className="text-xl md:text-2xl mb-8 text-gray-200">
-              Aprende técnicas avanzadas, planifica como un profesional y potencia el desarrollo de tus jugadores desde
-              el primer entrenamiento.
+              Vas a contar con una experiencia guiada y en tiempo real, clases en vivo por módulos, llamada personalizada 1-1 
             </p>
           </motion.div>
 
