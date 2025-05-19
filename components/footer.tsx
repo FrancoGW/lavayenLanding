@@ -97,8 +97,8 @@ export default function Footer() {
             <div className="space-y-2">
               <div className="flex items-center gap-2">
                 <Mail className="h-5 w-5 text-primary" />
-                <a href="mailto:ezequilavayen@gmail.com" className="text-gray-400 hover:text-primary transition-colors">
-                  ezequilavayen@gmail.com
+                <a href="mailto:equilavayen@gmail.com" className="text-gray-400 hover:text-primary transition-colors">
+                  equilavayen@gmail.com
                 </a>
               </div>
               <Button asChild className="mt-4">
