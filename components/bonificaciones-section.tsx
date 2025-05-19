@@ -35,8 +35,13 @@ const bonuses = [
   },
   {
     icon: <FileText className="h-10 w-10 text-accent" />,
-    title: "Vitaminas - Físico Técnico",
-    description: "Complementos para integrar el trabajo físico y técnico en tus sesiones.",
+    title: "Llamada personalizada",
+    description: "Sesión individual para resolver tus dudas y potenciar tu aprendizaje.",
+  },
+  {
+    icon: <FileText className="h-10 w-10 text-accent" />,
+    title: "Clases en vivo por módulos",
+    description: "Participa en clases en vivo para cada módulo y resuelve tus dudas en tiempo real.",
   },
 ]
 
@@ -99,11 +104,22 @@ export default function BonificacionesSection() {
                   },
                 }}
               >
-                <Card className="h-full hover:shadow-lg transition-all duration-300 border-t-2 border-t-accent">
-                  <CardContent className="p-6">
+                <Card className="h-full hover:shadow-lg transition-all duration-300 border-t-2 border-t-accent flex flex-col">
+                  <CardContent className="p-6 flex flex-col h-full">
                     <div className="mb-4">{bonus.icon}</div>
                     <h3 className="text-xl font-bold mb-2">{bonus.title}</h3>
                     <p className="text-muted-foreground">{bonus.description}</p>
+                    <div className="mt-auto flex justify-center pt-6">
+                      {bonus.title === "Entrada en calor para prácticas y juegos" && (
+                        <span className="bg-black text-white rounded px-3 py-1 text-sm font-semibold">Clase en vivo 6 de julio</span>
+                      )}
+                      {bonus.title === "Acondicionamiento Físico en Cancha" && (
+                        <span className="bg-black text-white rounded px-3 py-1 text-sm font-semibold">Clase en vivo 20 de julio</span>
+                      )}
+                      {bonus.title === "Entrenamientos de fuerza en el Gimnasio" && (
+                        <span className="bg-black text-white rounded px-3 py-1 text-sm font-semibold">Clase en vivo 13 de julio</span>
+                      )}
+                    </div>
                   </CardContent>
                 </Card>
               </motion.div>

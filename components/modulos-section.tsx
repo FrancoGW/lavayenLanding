@@ -123,6 +123,9 @@ export default function ModulosSection() {
                       </li>
                     ))}
                   </ul>
+                  {module.title === "Entrenamiento con Profesionales" && (
+                    <p className="mt-4 text-center font-semibold text-primary">Clase en vivo 29 de Junio</p>
+                  )}
                 </CardContent>
               </Card>
             </motion.div>
